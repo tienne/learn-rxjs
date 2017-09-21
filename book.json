@@ -1,0 +1,35 @@
+{
+  "gitbook": "3.1.1",
+  "title": "Learn RxJS",
+  "plugins": [
+    "include-codeblock",
+    "advanced-emoji",
+    "prism",
+    "highlight",
+    "copy-code-button",
+    "edit-link",
+    "github",
+    "github-buttons",
+    "ga"
+  ],
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/btroncone/learn-rxjs/tree/master",
+      "label": "Edit This Page"
+    },
+    "github": {
+      "url": "https://github.com/btroncone/learn-rxjs/"
+    },
+    "ga": {
+        "token": "UA-54001708-2"
+    },
+    "github-buttons": {
+      "repo": "btroncone/learn-rxjs",
+      "types": [
+        "star",
+        "watch"
+      ],
+      "size": "large"
+    }
+  }
+}

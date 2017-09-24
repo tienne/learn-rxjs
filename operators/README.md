@@ -1,4 +1,4 @@
-# RxJS 5 연산자(Operator)에 대한 예시
+# RxJS 5 연산자(Operator)
 
 RxJS5 연산자(Operator) 대한 설명과 관련 자료 및 실행 가능한 예제가 포함된 전체 목록입니다.
 

@@ -1,5 +1,5 @@
 {
-  "gitbook": "3.1.1",
+  "gitbook": "1.0.0",
   "title": "Learn RxJS-ko",
   "plugins": [
     "include-codeblock",
@@ -14,17 +14,17 @@
   ],
   "pluginsConfig": {
     "edit-link": {
-      "base": "https://github.com/tienne/lean-rxjs/tree/master",
+      "base": "https://github.com/tienne/learn-rxjs/tree/master",
       "label": "페이지 수정"
     },
     "github": {
-      "url": "https://github.com/tienne/lean-rxjs"
+      "url": "https://github.com/tienne/learn-rxjs"
     },
     "ga": {
         "token": ""
     },
     "github-buttons": {
-      "repo": "tienne/lean-rxjs",
+      "repo": "tienne/learn-rxjs",
       "types": [
         "star",
         "watch"

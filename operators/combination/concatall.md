@@ -10,6 +10,8 @@
 
 ---
 
+![](http://reactivex.io/rxjs/img/concatAll.png)
+
 ### Examples
 
 ( [example tests](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/combination/concatall-spec.ts) )

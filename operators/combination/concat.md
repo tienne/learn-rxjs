@@ -1,7 +1,7 @@
 # concat
 #### 연산자(operator) 정의: `concat(observables: ...*): Observable`
 
-## Subscribe to observables in order as previous completes, emit values.
+## Observable를 순차적으로 구독완료하며 값을 발생시킵니다.
 
 ---
 :bulb:  concat을 ATM기기 앞에 서있는 줄처럼 생각하시면 됩니다. 다음 구독 실행은 이전 Observable이 완료되기 전까지 실행이 불가능합니다!

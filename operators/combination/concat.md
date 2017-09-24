@@ -4,11 +4,11 @@
 ## Subscribe to observables in order as previous completes, emit values.
 
 ---
-:bulb:  You can think of concat like a line at a ATM, the next transaction (subscription) cannot start until the previous completes!
+:bulb:  concat을 ATM기기 앞에 서있는 줄처럼 생각하시면 됩니다. 다음 구독 실행은 이전 Observable이 완료되기 전까지 실행이 불가능합니다!
 
-:bulb:  This operator can be used as either a static or instance method!
+:bulb:  이 연산자(operator)는 정적 또는 인스턴스 메서드로도 사용할 수 있습니다!
 
-:bulb:  If throughput order is not a primary concern, try [merge](merge.md) instead!
+:bulb:  실행 순서가 상관이 없다면 [merge](merge.md) 연산자를 확인해보세요.
 
 ---
 
@@ -16,7 +16,7 @@
 
 ### Examples
 
-( [example tests](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/combination/concat-spec.ts) )
+( [예시 테스트코드](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/combination/concat-spec.ts) )
 
 ##### Example 1: 기본적인 2개의 Observable 결합
 

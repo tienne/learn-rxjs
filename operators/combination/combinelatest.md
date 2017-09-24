@@ -1,7 +1,7 @@
 # combineLatest
 #### 연산자(operator) 정의: `combineLatest(observables: ...Observable, project: function): Observable`
 
-## 결합시키는 Observable중 어떠한 Observable의 값이 발생될때, 각각 마지막 값으로 넘겨줍니다.
+## 결합시키는 Observable들 중 아무 Observable의 값이 발생될때, 각각 마지막 값으로 넘겨줍니다.
 
 ---
 :bulb:  이 연산자(operator)는 정적 또는 인스턴스 메서드로도 사용할 수 있습니다!

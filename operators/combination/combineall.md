@@ -3,6 +3,8 @@
 
 ## Observable의 Observable들이 완료(complate)되면 [combineLatest](combinelatest.md)를 적용하여 Observable의 Observable들을 평평하게 만듭니다.
 
+![Image](http://reactivex.io/rxjs/img/combineAll.png)
+
 ### Examples
 
 ( [예시 테스트코드](https://github.com/tienne/learn-rxjs/blob/master/operators/specs/combination/combineall-spec.ts) )
@@ -17,7 +19,7 @@ const source = Rx.Observable.interval(1000).take(2);
 //source에서 발생되는 값을 일정간격으로 5회 반복되는 스트림으로 맵핑
 const example = source.map(val => Rx.Observable.interval(1000).map(i => `Result (${val}): ${i}`).take(5));
 /*
-  source에서 발생되는 2개의 값들을 각각 내부적으로 1초 간격으로 발생되는 observable로 맵핑되며 
+  source에서 발생되는 2회 값들을 각각 내부적으로 1초 간격으로 5회 발생되는 observable로 맵핑되며 
   combineAll은 combineLatest 방식을 사용하여,
   observable의 값이 발생 할 때마다 각각의 마지막 값을 발생시킵니다.
 */

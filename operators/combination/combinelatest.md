@@ -1,31 +1,33 @@
 # combineLatest
-#### signature: `combineLatest(observables: ...Observable, project: function): Observable`
+#### 연산자(operator) 정의: `combineLatest(observables: ...Observable, project: function): Observable`
 
-## When any observable emits a value, emit the latest value from each.
-
----
-:bulb:  This operator can be used as either a static or instance method!
-
-:bulb:  [combineAll](combineall.md) can be used to apply combineLatest to emitted observables when a source completes!
+## 결합시키는 Observable중 어떠한 Observable의 값이 발생될때, 각각 마지막 값으로 넘겨줍니다.
 
 ---
+:bulb:  이 연산자(operator)는 정적 또는 인스턴스 메서드로도 사용할 수 있습니다!
+
+:bulb:  [combineAll](combineall.md) 연산자는 observable의 observable들이 완료되었을때 combineLatest를 이용하여 결합됩니다.
+
+---
+
+![](http://reactivex.io/rxjs/img/combineLatest.png)
 
 ### Examples
 
-( [example tests](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/combination/combinelatest-spec.ts) )
+( [예시 테스트코드](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/combination/combinelatest-spec.ts) )
 
-##### Example 1: Combining observables emitting at 3 intervals
+##### 예시 1: 일정 간격으로 발생되는 3개의 observable들을 결합
 ( [jsBin](http://jsbin.com/zupiqozaro/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/mygy9j86/) )
 
 ```js
-//timerOne emits first value at 1s, then once every 4s
+//timerOne은 1초에 첫 번째 값을 내고 4초마다 한 번씩 값을 발생시킵니다.
 const timerOne = Rx.Observable.timer(1000, 4000);
-//timerTwo emits first value at 2s, then once every 4s
-const timerTwo = Rx.Observable.timer(2000, 4000)
-//timerThree emits first value at 3s, then once every 4s
-const timerThree = Rx.Observable.timer(3000, 4000)
+// timerTwo는 2초에 첫 번째 값을 내고 4초마다 한 번씩 값을 발생시킵니다.
+const timerTwo = Rx.Observable.timer(2000, 4000);
+//timerThree는 3초에 첫 번째 값을 내고 4초마다 한 번씩 값을 발생시킵니다.
+const timerThree = Rx.Observable.timer(3000, 4000);
 
-//when one timer emits, emit the latest values from each timer as an array
+//하나의 타이머가 작동하면 각 타이머의 최신 값을 배열로 발생시킵니다.
 const combined = Rx.Observable
 .combineLatest(
     timerOne,
@@ -34,8 +36,8 @@ const combined = Rx.Observable
 );
 
 const subscribe = combined.subscribe(latestValues => {
-	//grab latest emitted values for timers one, two, and three
-	const [timerValOne, timerValTwo, timerValThree] = latestValues;
+  //타이머 one, two, three에 해당하는 값 변수 선언
+  const [timerValOne, timerValTwo, timerValThree] = latestValues;
   /*
   	Example:
     timerOne first tick: 'Timer One Latest: 1, Timer Two Latest:0, Timer Three Latest: 0
@@ -50,19 +52,19 @@ const subscribe = combined.subscribe(latestValues => {
 });
 ```
 
-##### Example 2: combineLatest with projection function
+##### 예시 2: projection function를 같이 넘긴 combineLatest 연산자(operator) 사용  
 
 ( [jsBin](http://jsbin.com/codotapula/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/uehasmb6/) )
 
 ```js
-//timerOne emits first value at 1s, then once every 4s
+//timerOne은 1초에 첫 번째 값을 내고 4초마다 한 번씩 값을 발생시킵니다.
 const timerOne = Rx.Observable.timer(1000, 4000);
-//timerTwo emits first value at 2s, then once every 4s
-const timerTwo = Rx.Observable.timer(2000, 4000)
-//timerThree emits first value at 3s, then once every 4s
-const timerThree = Rx.Observable.timer(3000, 4000)
+// timerTwo는 2초에 첫 번째 값을 내고 4초마다 한 번씩 값을 발생시킵니다.
+const timerTwo = Rx.Observable.timer(2000, 4000);
+//timerThree는 3초에 첫 번째 값을 내고 4초마다 한 번씩 값을 발생시킵니다.
+const timerThree = Rx.Observable.timer(3000, 4000);
 
-//combineLatest also takes an optional projection function
+//combineLatest 연산자(operator)는 projection 함수 넘겨줄 경우 스트림 발생시마다 projection 함수를 실행하여 값을 발생시킵니다.
 const combinedProject = Rx.Observable
 .combineLatest(
     timerOne,
@@ -74,26 +76,31 @@ const combinedProject = Rx.Observable
               Timer Three (Proj) Latest: ${three}`
     }
 );
-//log values
+//발생된 값 구독하여 확인
 const subscribe = combinedProject.subscribe(latestValuesProject => console.log(latestValuesProject));
 ```
 
-##### Example 3: Combining events from 2 buttons
+##### 예시 3: 2개의 버튼 이벤트들을 결합
 
 ( [jsBin](http://jsbin.com/hiyetucite/edit?html,js,output) | [jsFiddle](https://jsfiddle.net/btroncone/9rsf6t9v/1/) )
 
 ```js
-// helper function to set HTML
+// html를 설정하는 함수
 const setHtml = id => val => document.getElementById(id).innerHTML = val;
 
+function(id) {
+  return function(val) {
+    document.getElementById(id).innerHTML = val;
+  }
+}
 const addOneClick$ = id => Rx.Observable
     .fromEvent(document.getElementById(id), 'click')
-    // map every click to 1
+    // 매 클릭을 1로 변경(맵핑)
     .mapTo(1)
     .startWith(0)
-    // keep a running total
+    // 클릭한것들을 계속 누적(reduce)
     .scan((acc, curr) => acc + curr)
-    // set HTML for appropriate element
+    // 클릭횟수를 HTML에 적용시킵니다.
     .do(setHtml(`${id}Total`))
   
   
@@ -116,7 +123,7 @@ const combineTotal$ = Rx.Observable
 <div id="total"></div>
 ```
 
-### Additional Resources
+### 추가 자료 목록
 * [combineLatest](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-combineLatest) :newspaper: - Official docs
 * [Combining streams with combineLatest](https://egghead.io/lessons/rxjs-combining-streams-with-combinelatest?course=step-by-step-async-javascript-with-rxjs) :video_camera: :dollar: - John Linquist
 * [Combination operator: combineLatest](https://egghead.io/lessons/rxjs-combination-operator-combinelatest?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz

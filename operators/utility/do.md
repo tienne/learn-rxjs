@@ -1,5 +1,5 @@
 # do
-#### signature: `do(nextOrObserver: function, error: function, complete: function): Observable`
+#### 연산자(operator) 정의: `do(nextOrObserver: function, error: function, complete: function): Observable`
 
 ## Transparently perform actions or side-effects, such as logging.
 

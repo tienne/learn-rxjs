@@ -1,5 +1,5 @@
 # windowTime
-#### signature: `windowTime(windowTimeSpan: number, windowCreationInterval: number, scheduler: Scheduler): Observable`
+#### 연산자(operator) 정의: `windowTime(windowTimeSpan: number, windowCreationInterval: number, scheduler: Scheduler): Observable`
 
 ## Observable of values collected from source for each provided time span.
 

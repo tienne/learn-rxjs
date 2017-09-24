@@ -1,6 +1,6 @@
 # Combination Operators(조합 연산자)
 
-combination(조합) Operator(연산자)는 여러개의 Observable를 결합하는 연산자입니다.
+combination Operator(조합 연산자)는 여러개의 Observable를 결합하는 연산자입니다.
 결합된 스트림은 값의 순서, 시간 및 구조가 변경되는게 특징입니다.
 
 ## 연산자 목록

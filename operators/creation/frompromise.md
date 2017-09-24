@@ -1,5 +1,5 @@
 # fromPromise
-#### signature: `fromPromise(promise: Promise, scheduler: Scheduler): Observable`
+#### 연산자(operator) 정의: `fromPromise(promise: Promise, scheduler: Scheduler): Observable`
 
 ## Create observable from promise, emitting result.
 

@@ -1,5 +1,5 @@
 # skip
-#### signature: `skip(the: Number): Observable`
+#### 연산자(operator) 정의: `skip(the: Number): Observable`
 
 ## Skip the provided number of emitted values.
 

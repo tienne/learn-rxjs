@@ -1,5 +1,5 @@
 # bufferWhen
-#### signature: `bufferWhen(closingSelector: function): Observable`
+#### 연산자(operator) 정의: `bufferWhen(closingSelector: function): Observable`
 
 ## Collect all values until closing selector emits, emit buffered values.
 

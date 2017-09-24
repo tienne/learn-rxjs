@@ -1,5 +1,5 @@
 # multicast
-#### signature: `multicast(selector: Function): Observable`
+#### 연산자(operator) 정의: `multicast(selector: Function): Observable`
 
 ## Share source utilizing the provided Subject.
 

@@ -1,5 +1,5 @@
 # ignoreElements
-#### signature: `ignoreElements(): Observable`
+#### 연산자(operator) 정의: `ignoreElements(): Observable`
 
 
 ## Ignore everything but complete and error.

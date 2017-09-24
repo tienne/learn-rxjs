@@ -1,5 +1,5 @@
 # forkJoin
-#### signature: `forkJoin(...args, selector : function): Observable`
+#### 연산자(operator) 정의: `forkJoin(...args, selector : function): Observable`
 
 ## When all observables complete emit the last value from each.
 

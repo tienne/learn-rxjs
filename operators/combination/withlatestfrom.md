@@ -1,5 +1,5 @@
 # withLatestFrom
-#### signature: `withLatestFrom(other: Observable, project: Function): Observable`
+#### 연산자(operator) 정의: `withLatestFrom(other: Observable, project: Function): Observable`
 
 ## Also provide the last value from another observable.
 

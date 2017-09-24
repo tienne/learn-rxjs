@@ -1,5 +1,5 @@
 # pluck
-#### signature: `pluck(properties: ...args): Observable`
+#### 연산자(operator) 정의: `pluck(properties: ...args): Observable`
 
 ## Select properties to emit.
 

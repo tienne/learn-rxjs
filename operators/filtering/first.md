@@ -1,5 +1,5 @@
 #first
-#### signature: `first(predicate: function, select: function)`
+#### 연산자(operator) 정의: `first(predicate: function, select: function)`
 
 ## Emit the first value or first to pass provided expression.
 

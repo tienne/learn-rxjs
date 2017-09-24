@@ -1,5 +1,5 @@
 # retryWhen
-#### signature: `retryWhen(receives: (errors: Observable) => Observable, the: scheduler): Observable`
+#### 연산자(operator) 정의: `retryWhen(receives: (errors: Observable) => Observable, the: scheduler): Observable`
 
 ## Retry an observable sequence on error based on custom criteria.
 

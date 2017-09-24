@@ -1,5 +1,5 @@
 # merge
-#### signature: `merge(input: Observable): Observable`
+#### 연산자(operator) 정의: `merge(input: Observable): Observable`
 
 ## Turn multiple observables into a single observable.
 

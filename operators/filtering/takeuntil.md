@@ -1,5 +1,5 @@
 # takeUntil
-#### signature: ` takeUntil(notifier: Observable): Observable`
+#### 연산자(operator) 정의: ` takeUntil(notifier: Observable): Observable`
 
 ## Emit values until provided observable emits.
 

@@ -1,5 +1,5 @@
 # concatMapTo
-#### signature: `concatMapTo(observable: Observable, resultSelector: function): Observable`
+#### 연산자(operator) 정의: `concatMapTo(observable: Observable, resultSelector: function): Observable`
 
 ## Subscribe to provided observable when previous completes, emit values.
 

@@ -1,5 +1,5 @@
 # single
-#### signature: `single(a: Function): Observable`
+#### 연산자(operator) 정의: `single(a: Function): Observable`
 
 ## Emit single item that passes expression.
 

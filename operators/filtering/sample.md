@@ -1,5 +1,5 @@
 # sample
-#### signature: `sample(sampler: Observable): Observable`
+#### 연산자(operator) 정의: `sample(sampler: Observable): Observable`
 
 ## Sample from source when provided observable emits.
 

@@ -1,5 +1,5 @@
 #last
-#### signature: `last(predicate: function): Observable`
+#### 연산자(operator) 정의: `last(predicate: function): Observable`
 
 ## Emit the last value emitted from source on completion, based on provided expression.
 

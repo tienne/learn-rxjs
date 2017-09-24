@@ -1,5 +1,5 @@
 # range
-#### signature: `range(start: number, count: number, scheduler: Scheduler): Observable`
+#### 연산자(operator) 정의: `range(start: number, count: number, scheduler: Scheduler): Observable`
 
 ## Emit numbers in provided range in sequence.
 

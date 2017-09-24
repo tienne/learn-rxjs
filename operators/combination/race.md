@@ -1,5 +1,5 @@
 # race
-#### signature: `race(): Observable`
+#### 연산자(operator) 정의: `race(): Observable`
 
 ## The observable to emit first is used. 
 

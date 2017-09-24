@@ -1,5 +1,5 @@
 # throttleTime
-#### signature: `throttleTime(duration: number, scheduler: Scheduler): Observable`
+#### 연산자(operator) 정의: `throttleTime(duration: number, scheduler: Scheduler): Observable`
 
 ## Emit latest value when specified duration has passed.
 

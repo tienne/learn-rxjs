@@ -1,5 +1,5 @@
 # publish
-#### signature: `publish() : ConnectableObservable`
+#### 연산자(operator) 정의: `publish() : ConnectableObservable`
 
 ## Share source and make hot by calling connect.
 

@@ -1,5 +1,5 @@
 # skipUntil
-####signature: `skipUntil(the: Observable): Observable`
+#### 연산자(operator) 정의: `skipUntil(the: Observable): Observable`
 
 ## Skip emitted values from source until provided observable emits.
 

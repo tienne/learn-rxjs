@@ -1,5 +1,5 @@
 # share
-#### signature: `share(): Observable`
+#### 연산자(operator) 정의: `share(): Observable`
 
 ## Share source among multiple subscribers.
 

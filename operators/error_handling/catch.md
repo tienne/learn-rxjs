@@ -1,5 +1,5 @@
 # catch
-#### signature: `catch(project : function): Observable`
+#### 연산자(operator) 정의: `catch(project : function): Observable`
 
 ## Gracefully handle errors in an observable sequence.
 

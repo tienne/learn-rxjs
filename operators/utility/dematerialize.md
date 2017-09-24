@@ -1,5 +1,5 @@
 # dematerialize
-#### signature: `dematerialize(): Observable`
+#### 연산자(operator) 정의: `dematerialize(): Observable`
 
 ## Turn notification objects into notification values.
 

@@ -1,5 +1,5 @@
 # delayWhen
-#### signature: `delayWhen(selector: Function, sequence: Observable): Observable`
+#### 연산자(operator) 정의: `delayWhen(selector: Function, sequence: Observable): Observable`
 
 ## Delay emitted values determined by provided function.
 

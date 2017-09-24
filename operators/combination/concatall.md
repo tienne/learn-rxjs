@@ -1,5 +1,5 @@
 # concatAll
-#### signature: `concatAll(): Observable`
+#### 연산자(operator) 정의: `concatAll(): Observable`
 
 ## Collect observables and subscribe to next when previous completes.
 

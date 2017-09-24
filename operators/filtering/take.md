@@ -1,5 +1,5 @@
 # take
-#### signature: ` take(count: number): Observable`
+#### 연산자(operator) 정의: ` take(count: number): Observable`
 
 ## Emit provided number of values before completing.
 

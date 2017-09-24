@@ -1,5 +1,5 @@
 # mergeAll
-#### signature: `mergeAll(concurrent: number): Observable`
+#### 연산자(operator) 정의: `mergeAll(concurrent: number): Observable`
 
 ## Collect and subscribe to all observables.
 

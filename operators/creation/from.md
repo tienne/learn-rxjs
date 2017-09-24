@@ -1,5 +1,5 @@
 # from
-#### signature: `from(ish: ObservableInput, mapFn: function, thisArg: any, scheduler: Scheduler): Observable`
+#### 연산자(operator) 정의: `from(ish: ObservableInput, mapFn: function, thisArg: any, scheduler: Scheduler): Observable`
 
 ## Turn an array, promise, or iterable into an observable.
 

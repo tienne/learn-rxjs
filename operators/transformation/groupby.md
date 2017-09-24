@@ -1,5 +1,5 @@
 # groupBy
-#### signature: `groupBy(keySelector: Function, elementSelector: Function): Observable`
+#### 연산자(operator) 정의: `groupBy(keySelector: Function, elementSelector: Function): Observable`
 
 ## Group into observables based on provided value.
 

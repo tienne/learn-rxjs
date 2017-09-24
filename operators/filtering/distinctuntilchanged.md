@@ -1,5 +1,5 @@
 # distinctUntilChanged
-#### signature: ` distinctUntilChanged(compare: function): Observable`
+#### 연산자(operator) 정의: ` distinctUntilChanged(compare: function): Observable`
 
 ## Only emit when the current value is different than the last.
 

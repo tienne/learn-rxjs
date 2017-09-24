@@ -1,5 +1,5 @@
 # expand
-#### signature: `expand(project: function, concurrent: number, scheduler: Scheduler): Observable`
+#### 연산자(operator) 정의: `expand(project: function, concurrent: number, scheduler: Scheduler): Observable`
 
 ## Recursively call provided function.
 

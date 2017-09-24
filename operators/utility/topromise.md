@@ -1,5 +1,5 @@
 # toPromise
-#### signature: `toPromise() : Promise`
+#### 연산자(operator) 정의: `toPromise() : Promise`
 
 ## Convert observable to promise.
 

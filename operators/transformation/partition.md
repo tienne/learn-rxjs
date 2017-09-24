@@ -1,5 +1,5 @@
 # partition
-#### signature: `partition(predicate: function: boolean, thisArg: any): [Observable, Observable]`
+#### 연산자(operator) 정의: `partition(predicate: function: boolean, thisArg: any): [Observable, Observable]`
 
 ## Split one observable into two based on provided predicate.
 

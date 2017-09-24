@@ -1,5 +1,5 @@
 # window
-#### signature: `window(windowBoundaries: Observable): Observable`
+#### 연산자(operator) 정의: `window(windowBoundaries: Observable): Observable`
 
 ## Observable of values for window of time.
 

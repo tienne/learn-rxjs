@@ -1,5 +1,5 @@
 # fromEvent
-#### signature: `fromEvent(target: EventTargetLike, eventName: string, selector: function): Observable`
+#### 연산자(operator) 정의: `fromEvent(target: EventTargetLike, eventName: string, selector: function): Observable`
 
 ## Turn event into observable sequence.
 

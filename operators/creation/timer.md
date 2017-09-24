@@ -1,5 +1,5 @@
 # timer
-#### signature: `timer(initialDelay: number | Date, period: number, scheduler: Scheduler): Observable`
+#### 연산자(operator) 정의: `timer(initialDelay: number | Date, period: number, scheduler: Scheduler): Observable`
 
 ## After given duration, emit numbers in sequence every specified duration.
 

@@ -1,5 +1,5 @@
 # retry
-#### signature: `retry(number: number): Observable`
+#### 연산자(operator) 정의: `retry(number: number): Observable`
 
 ## Retry an observable sequence a specific number of times should an error occur.
 

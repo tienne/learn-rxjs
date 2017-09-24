@@ -1,5 +1,5 @@
 # startWith
-####signature: `startWith(an: Values): Observable`
+#### 연산자(operator) 정의: `startWith(an: Values): Observable`
 
 ## Emit given value first.
 

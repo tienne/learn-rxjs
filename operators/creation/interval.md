@@ -1,5 +1,5 @@
 # interval
-#### signature: `interval(period: number, scheduler: Scheduler): Observable`
+#### 연산자(operator) 정의: `interval(period: number, scheduler: Scheduler): Observable`
 
 ## Emit numbers in sequence based on provided timeframe.
 

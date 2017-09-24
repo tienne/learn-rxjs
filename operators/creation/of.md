@@ -1,5 +1,5 @@
 # of
-#### signature: ` of(...values, scheduler: Scheduler): Observable`
+#### 연산자(operator) 정의: ` of(...values, scheduler: Scheduler): Observable`
 
 ## Emit variable amount of values in a sequence.
 

@@ -1,5 +1,5 @@
 # concatMap
-#### signature: `concatMap(project: function, resultSelector: function): Observable`
+#### 연산자(operator) 정의: `concatMap(project: function, resultSelector: function): Observable`
 
 ## Map values to inner observable, subscribe and emit in order.
 

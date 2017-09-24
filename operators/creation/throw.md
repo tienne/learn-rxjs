@@ -1,5 +1,5 @@
 # throw
-#### signature: `throw(error: any, scheduler: Scheduler): Observable`
+#### 연산자(operator) 정의: `throw(error: any, scheduler: Scheduler): Observable`
 
 ## Emit error on subscription.
 

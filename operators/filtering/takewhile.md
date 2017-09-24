@@ -1,5 +1,5 @@
 # takeWhile
-#### signature: `takeWhile(predicate: function(value, index): boolean): Observable`
+#### 연산자(operator) 정의: `takeWhile(predicate: function(value, index): boolean): Observable`
 
 ## Emit values until provided expression is false.
 

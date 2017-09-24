@@ -1,5 +1,5 @@
 # bufferToggle
-#### signature: `bufferToggle(openings: Observable, closingSelector: Function): Observable`
+#### 연산자(operator) 정의: `bufferToggle(openings: Observable, closingSelector: Function): Observable`
 
 ## Toggle on to catch emitted values from source, toggle off to emit buffered values as array.
 

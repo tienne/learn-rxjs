@@ -1,5 +1,5 @@
 # pairwise
-#### signature: `pairwise(): Observable<Array>`
+#### 연산자(operator) 정의: `pairwise(): Observable<Array>`
 
 ## Emit the previous and current values as an array.
 

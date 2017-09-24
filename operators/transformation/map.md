@@ -1,5 +1,5 @@
 # map
-#### signature: `map(project: Function, thisArg: any): Observable`
+#### 연산자(operator) 정의: `map(project: Function, thisArg: any): Observable`
 
 ## Apply projection with each value from source.
 

@@ -1,5 +1,5 @@
 # empty
-#### signature: `empty(scheduler: Scheduler): Observable`
+#### 연산자(operator) 정의: `empty(scheduler: Scheduler): Observable`
 
 ## Observable that immediately completes.
 

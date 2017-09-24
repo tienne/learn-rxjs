@@ -1,5 +1,5 @@
 # bufferCount
-#### signature: `bufferCount(bufferSize: number, startBufferEvery: number = null): Observable`
+#### 연산자(operator) 정의: `bufferCount(bufferSize: number, startBufferEvery: number = null): Observable`
 
 ## Collect emitted values until provided number is fulfilled, emit as array.
 

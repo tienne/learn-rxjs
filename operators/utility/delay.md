@@ -1,5 +1,5 @@
 # delay
-#### signature: `delay(delay: number | Date, scheduler: Scheduler): Observable`
+#### 연산자(operator) 정의: `delay(delay: number | Date, scheduler: Scheduler): Observable`
 
 ## Delay emitted values by given time.
 

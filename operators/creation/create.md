@@ -1,5 +1,5 @@
 # create
-#### signature: `create(subscribe: function)`
+#### 연산자(operator) 정의: `create(subscribe: function)`
 
 ## Create an observable with given subscription function.
 

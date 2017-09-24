@@ -1,5 +1,5 @@
 # mapTo
-#### signature: `mapTo(value: any): Observable`
+#### 연산자(operator) 정의: `mapTo(value: any): Observable`
 
 ## Map emissions to constant value.
 

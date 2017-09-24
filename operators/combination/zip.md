@@ -1,5 +1,5 @@
 # zip
-#### signature: `zip(observables: *): Observable`
+#### 연산자(operator) 정의: `zip(observables: *): Observable`
 
 ### Description
 

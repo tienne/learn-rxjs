@@ -1,5 +1,5 @@
 # throttle
-#### signature: `throttle(durationSelector: function(value): Observable | Promise): Observable`
+#### 연산자(operator) 정의: `throttle(durationSelector: function(value): Observable | Promise): Observable`
 
 ## Emit value only when duration, determined by provided function, has passed.
 

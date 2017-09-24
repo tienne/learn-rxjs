@@ -1,5 +1,5 @@
 # let
-#### signature: `let(function): Observable`
+#### 연산자(operator) 정의: `let(function): Observable`
 
 ## Let me have the whole observable.
 

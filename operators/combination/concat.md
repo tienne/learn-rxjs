@@ -1,5 +1,5 @@
 # concat
-#### signature: `concat(observables: ...*): Observable`
+#### 연산자(operator) 정의: `concat(observables: ...*): Observable`
 
 ## Subscribe to observables in order as previous completes, emit values.
 
@@ -11,6 +11,8 @@
 :bulb:  If throughput order is not a primary concern, try [merge](merge.md) instead!
 
 ---
+
+![](http://reactivex.io/rxjs/img/concat.png)
 
 ### Examples
 

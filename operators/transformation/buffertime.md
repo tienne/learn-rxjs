@@ -1,5 +1,5 @@
 # bufferTime
-#### signature: `bufferTime(bufferTimeSpan: number, bufferCreationInterval: number, scheduler: Scheduler): Observable`
+#### 연산자(operator) 정의: `bufferTime(bufferTimeSpan: number, bufferCreationInterval: number, scheduler: Scheduler): Observable`
 
 ## Collect emitted values until provided time has passed, emit as array.
 

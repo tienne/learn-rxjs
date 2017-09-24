@@ -1,5 +1,5 @@
 # exhaustMap
-#### signature: `exhaustMap(project: function, resultSelector: function): Observable`
+#### 연산자(operator) 정의: `exhaustMap(project: function, resultSelector: function): Observable`
 
 ## Map to inner observable, ignore other values until that observable completes.
 

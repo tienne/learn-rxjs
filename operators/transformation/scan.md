@@ -1,5 +1,5 @@
 # scan
-#### signature: `scan(accumulator: function, seed: any): Observable`
+#### 연산자(operator) 정의: `scan(accumulator: function, seed: any): Observable`
 
 ## Reduce over time.
 

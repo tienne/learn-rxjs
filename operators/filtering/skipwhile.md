@@ -1,5 +1,5 @@
 # skipWhile
-#### signature: `skipWhile(predicate: Function): Observable`
+#### 연산자(operator) 정의: `skipWhile(predicate: Function): Observable`
 
 ## Skip emitted values from source until provided expression is false.
 

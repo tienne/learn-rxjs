@@ -1,5 +1,5 @@
 # mergeMap
-#### signature: `mergeMap(project: function: Observable, resultSelector: function: any, concurrent: number): Observable`
+#### 연산자(operator) 정의: `mergeMap(project: function: Observable, resultSelector: function: any, concurrent: number): Observable`
 
 ## Map to observable, emit values.
 

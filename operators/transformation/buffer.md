@@ -1,5 +1,5 @@
 # buffer
-#### signature: `buffer(closingNotifier: Observable): Observable`
+#### 연산자(operator) 정의: `buffer(closingNotifier: Observable): Observable`
 
 ## Collect output values until provided observable emits, emit as array.
 

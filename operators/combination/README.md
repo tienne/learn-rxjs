@@ -1,9 +1,9 @@
-# Combination Operators
+# Combination Operators(조합 연산자)
 
-The combination operators allow the joining of information from multiple observables.
-Order, time, and structure of emitted values is the primary variation among these operators.
+combination(조합) Operator(연산자)는 여러개의 Observable를 결합하는 연산자입니다.
+결합된 스트림은 값의 순서, 시간 및 구조가 변경되는게 특징입니다.
 
-## Contents
+## 연산자 목록
 * [combineAll](combineall.md)
 * [combineLatest](combinelatest.md) :star:
 * [concat](concat.md) :star:
@@ -17,4 +17,4 @@ Order, time, and structure of emitted values is the primary variation among thes
 * [withLatestFrom](withlatestfrom.md) :star:
 * [zip](zip.md)
 
-:star: - *commonly used*
+:star: - *많이 사용되는 연산자(operator)*

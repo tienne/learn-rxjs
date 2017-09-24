@@ -1,10 +1,10 @@
-# RxJS 5 Operators By Example
+# RxJS 5 연산자(Operator)에 대한 예시
 
-A complete list of RxJS 5 operators with clear explanations, relevant resources, and executable examples.
+RxJS5 연산자(Operator) 대한 설명과 관련 자료 및 실행 가능한 예제가 포함된 전체 목록입니다.
 
-*[Prefer a complete list in alphabetical order?](complete.md)*
+*[알파벳순으로 정렬된 목록을 보실려면?](complete.md)*
 
-### Contents (By Operator Type)
+### 연산자(Operator) 타입에 따른 목록
 * [Combination](combination/README.md)
     * [combineAll](combination/combineall.md)
     * [combineLatest](combination/combinelatest.md) :star:
@@ -87,8 +87,8 @@ A complete list of RxJS 5 operators with clear explanations, relevant resources,
     * [let](utility/let.md)
     * [toPromise](utility/topromise.md)
 
-:star: - *commonly used*
+:star: - *많이 사용되는 연산자(operator)*
 
-### Additional Resources
+### 추가 자료목록
 * [What Are Operators?](http://reactivex.io/rxjs/manual/overview.html#operators) :newspaper: - Official Docs
 * [What Operators Are](https://egghead.io/lessons/rxjs-what-rxjs-operators-are) :video_camera: :dollar: - André Staltz

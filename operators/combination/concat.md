@@ -18,14 +18,14 @@
 
 ( [example tests](https://github.com/btroncone/learn-rxjs/blob/master/operators/specs/combination/concat-spec.ts) )
 
-##### Example 1: concat 2 basic observables
+##### Example 1: 기본적인 2개의 Observable 결합
 
 ( [jsBin](http://jsbin.com/gegubutele/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/rxwnr3hh/) )
 
 ```js
-//emits 1,2,3
+//1,2,3 값 발생
 const sourceOne = Rx.Observable.of(1,2,3);
-//emits 4,5,6
+//4,5,6 값 발생
 const sourceTwo = Rx.Observable.of(4,5,6);
 //emit values from sourceOne, when complete, subscribe to sourceTwo
 const example = sourceOne.concat(sourceTwo);

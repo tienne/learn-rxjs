@@ -1,5 +1,5 @@
 {
-  "gitbook": "1.0.0",
+  "gitbook": "4.0.0",
   "title": "Learn RxJS-ko",
   "plugins": [
     "include-codeblock",

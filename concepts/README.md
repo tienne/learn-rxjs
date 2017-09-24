@@ -1,3 +1,3 @@
 # Concepts
 
-*Coming soon...*
+*추가예정입니다..*

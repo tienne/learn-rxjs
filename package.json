@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/btroncone/learn-rxjs.git"
+    "url": "git+https://github.com/tienne/learn-rxjs.git"
   },
   "keywords": [
     "rxjs"
   ],
-  "author": "Brian Troncone <btroncone@gmail.com>",
+  "author": "David Kwon <tienne89@gmail.com>",
   "contributors": [
     {
       "name": "Huy Le"
@@ -27,7 +27,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/btroncone/learn-rxjs/issues"
+    "url": "https://github.com/tienne/lean-rxjs.git/issues"
   },
-  "homepage": "https://github.com/btroncone/learn-rxjs#readme"
+  "homepage": "https://github.com/tienne/lean-rxjs.git#readme"
 }

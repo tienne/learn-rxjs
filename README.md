@@ -1,7 +1,7 @@
 # Learn RxJS
 
 RxJs에 대한 명확한 예제, 설명 그리고 정보가 기재되어있습니다.
-해당 페이지는 [learnrxjs]()https://www.learnrxjs.io/)의 내용을 번역한 페이지입니다.
+해당 페이지는 [learnrxjs](https://www.learnrxjs.io/)의 내용을 번역한 페이지입니다.
 그외에 추가적인 자료도 계속 추가할 예정입니다.
 
 ## RxJS 소개

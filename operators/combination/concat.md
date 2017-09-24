@@ -6,7 +6,7 @@
 ---
 :bulb:  concat을 ATM기기 앞에 서있는 줄처럼 생각하시면 됩니다. 다음 구독 실행은 이전 Observable이 완료되기 전까지 실행이 불가능합니다!
 
-:bulb:  이 연산자(operator)는 정적 또는 인스턴스 메서드로도 사용할 수 있습니다!
+:bulb:  이 연산자(operator)는 static 또는 Observable의 인스턴스 메서드로도 사용할 수 있습니다!
 
 :bulb:  실행 순서가 상관이 없다면 [merge](merge.md) 연산자를 확인해보세요.
 
@@ -27,23 +27,23 @@
 const sourceOne = Rx.Observable.of(1,2,3);
 //4,5,6 값 발생
 const sourceTwo = Rx.Observable.of(4,5,6);
-//emit values from sourceOne, when complete, subscribe to sourceTwo
+//sourceOne 값 발생하고, 완료가 되었을때, sourceTwo를 이어서 구독합니다.
 const example = sourceOne.concat(sourceTwo);
 //output: 1,2,3,4,5,6
 const subscribe = example.subscribe(val => console.log('Example: Basic concat:', val));
 ```
 
-##### Example 2: concat as static method
+##### Example 2: concat의 static 메서드로 활용
 
 ( [jsBin](http://jsbin.com/xihagewune/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/5qdtvhu8/) )
 
 ```js
-//emits 1,2,3
+//1,2,3 값 발생
 const sourceOne = Rx.Observable.of(1,2,3);
-//emits 4,5,6
+//4,5,6 값 발생
 const sourceTwo = Rx.Observable.of(4,5,6);
 
-//used as static
+//static 메서드로 사용
 const example = Rx.Observable.concat(
 	sourceOne,
   sourceTwo
@@ -52,30 +52,30 @@ const example = Rx.Observable.concat(
 const subscribe = example.subscribe(val => console.log('Example: static', val));
 ```
 
-##### Example 3: concat with delayed source
+##### Example 3: 지연처리가 들어간 Observable과의 결합
 
 ( [jsBin](http://jsbin.com/nezonosubi/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/L2s49msx/) )
 
 ```js
-//emits 1,2,3
+//1,2,3 값 발생
 const sourceOne = Rx.Observable.of(1,2,3);
-//emits 4,5,6
+//4,5,6 값 발생
 const sourceTwo = Rx.Observable.of(4,5,6);
 
-//delay 3 seconds then emit
+//값 발생을 3초 지연 시킴
 const sourceThree = sourceOne.delay(3000);
-//sourceTwo waits on sourceOne to complete before subscribing
+//sourceTwo는 sourceOne이 구독 완료되기전까지 기다린다.
 const example = sourceThree.concat(sourceTwo);
 //output: 1,2,3,4,5,6
 const subscribe = example.subscribe(val => console.log('Example: Delayed source one:', val));
 ```
 
-##### Example 4: concat with source that does not complete
+##### Example 4: 완료되지 않은 Observable과의 결합
 
 ( [jsBin](http://jsbin.com/vixajoxaze/1/edit?js,console) | [jsFiddle](https://jsfiddle.net/btroncone/4bhtb81u/) )
 
 ```js
-//when source never completes, the subsequent observables never runs
+//두번째로 실행될 Rx.Observable.of('This','Never','Runs')는 앞에 Observable이 완료되지 않기때문에 실행되지 않습니다.
 const source = Rx.Observable
   .concat(
   	Rx.Observable.interval(1000),
@@ -86,7 +86,7 @@ const subscribe = source.subscribe(val => console.log('Example: Source never com
 ```
 
 
-### Additional Resources
+### 추가자료들
 * [concat](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concat) :newspaper: - Official docs
 * [Combination operator: concat, startWith](https://egghead.io/lessons/rxjs-combination-operators-concat-startwith?course=rxjs-beyond-the-basics-operators-in-depth) :video_camera: :dollar: - André Staltz
 

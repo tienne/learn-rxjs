@@ -4,7 +4,7 @@
 ## 결합시키는 Observable들 중 아무 Observable의 값이 발생될때, 각각 마지막 값으로 넘겨줍니다.
 
 ---
-:bulb:  이 연산자(operator)는 정적 또는 인스턴스 메서드로도 사용할 수 있습니다!
+:bulb:  이 연산자(operator)는 static 또는 Observable의 인스턴스 메서드로도 사용할 수 있습니다!
 
 :bulb:  [combineAll](combineall.md) 연산자는 observable의 observable들이 완료되었을때 combineLatest를 이용하여 결합됩니다.
 

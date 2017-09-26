@@ -1,7 +1,7 @@
 # concatAll
 #### 연산자(operator) 정의: `concatAll(): Observable`
 
-## Collect observables and subscribe to next when previous completes.
+## observable의 observable를 결합하고 이전 Observable이 완료되면 그 다음 Observable의 구독이 실행됩니다.
 
 ---
 :warning:  Be wary of [backpressure](https://github.com/Reactive-Extensions/RxJS/blob/master/doc/gettingstarted/backpressure.md) when the source emits at a faster pace than inner observables complete!
@@ -74,7 +74,7 @@ const example = source.concatAll();
 const subscribe = example.subscribe(val => console.log(val));
 ```
 
-### Additional Resources
+### 추가자료 목록
 * [concatAll](http://reactivex.io/rxjs/class/es6/Observable.js~Observable.html#instance-method-concatAll) :newspaper: - Official docs
 * [Flatten a higher order observable with concatAll in RxJS](https://egghead.io/lessons/rxjs-flatten-a-higher-order-observable-with-concatall-in-rxjs?course=use-higher-order-observables-in-rxjs-effectively) :video_camera: :dollar: - André Staltz
 
